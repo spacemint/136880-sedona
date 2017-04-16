@@ -5,9 +5,11 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <div class="main-logo">
-        <img src="#" width="100" height="75" alt="Логотип City of Sedona">
+        <a href="#">
+          <img src="#" width="100" height="75" alt="Логотип City of Sedona">
+        </a>
       </div>
       <nav class="main-nav">
         <ul>
@@ -26,89 +28,84 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
-      <section class="intro-pic-container">
+    <main class="container">
+      <section class="intro-img">
         <img src="#" width="200" height="100" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       </section>
-      <article class="about-main-content">
-        <div class="about-intro">
-          <h3>Седона &mdash; небольшой городок в Аризоне,<br>
-            заслуживающий большего!</h3>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
-        <section class="about-special about-first-special">
-            <h3>Настоящий городок</h3>
-            <p>
-              &mdash;&nbsp;№1&nbsp;&mdash;
-              <br>
-              Седона &mdash; не&nbsp;аттракцион для&nbsp;туристов, там&nbsp;течёт своя&nbsp;жизнь
-            </p>
-        </section>
-        <section class="about-needs">
-          <div class="about-needs-block about-needs-housing">
+      <div class="about-intro">
+        <h2>Седона &mdash; небольшой городок в Аризоне,<br>
+          заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+      <section class="features-special first-special">
+        <h3>Настоящий городок</h3>
+        <p>
+          &mdash;&nbsp;№1&nbsp;&mdash;
+          Седона &mdash; не&nbsp;аттракцион для&nbsp;туристов, там&nbsp;течёт своя&nbsp;жизнь
+        </p>
+      </section>
+      <section class="features-needs">
+          <div class="features-needs-housing">
             <h3>Жильё</h3>
             <p>
               Рекомендуем пожить в&nbsp;настоящем отеле, всё как в&nbsp;кино!
             </p>
           </div>
-          <div class="about-needs-block about-needs-food">
+          <div class="features-needs-food">
             <h3>Еда</h3>
             <p>
               Всегда заказывайте фирменный бургер, вы не&nbsp;разочаруетесь!
             </p>
           </div>
-          <div class="about-needs-block about-needs-souvenirs">
+          <div class="features-needs-souvenirs">
             <h3>Сувениры</h3>
             <p>
               Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!
             </p>
           </div>
         </section>
-        <section class="about-special about-second-special">
-            <h3>Там есть мост дьявола</h3>
-            <p>
-              &mdash;&nbsp;№2&nbsp;&mdash;
-              <br>
-              Да, по&nbsp;нему можно пройти! Если&nbsp;конечно вы осмелитесь
-            </p>
-        </section>
-        <section class="about-row-specials">
-          <div class="about-special about-row-specials-block">
-            <h3>Небольшая площадь</h3>
-            <p>
-              &mdash;&nbsp;№3&nbsp;&mdash;
-              <br>
-              Все достопримечательности находятся очень близко
-            </p>
-          </div>
-          <div class="about-special about-row-specials-block">
-            <h3>Красивая дорога</h3>
-            <p>
-              &mdash;&nbsp;№4&nbsp;&mdash;
-              <br>
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
-          </div>
-          <div class="about-special about-row-specials-block">
-            <h3>Мало туристов</h3>
-            <p>
-              &mdash;&nbsp;№5&nbsp;&mdash;
-              <br>
-              Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там
-            </p>
-          </div>
-        </section>
-      </article>
+      <section class="features-special second-special">
+        <h3>Там есть мост дьявола</h3>
+        <p>
+          &mdash;&nbsp;№2&nbsp;&mdash;
+          Да, по&nbsp;нему можно пройти! Если&nbsp;конечно вы осмелитесь
+        </p>
+      </section>
+      <section class="features-row-specials">
+        <div class="third-special">
+          <h3>Небольшая площадь</h3>
+          <p>
+            &mdash;&nbsp;№3&nbsp;&mdash;
+            Все достопримечательности находятся очень близко
+          </p>
+        </div>
+        <div class="forth-special">
+          <h3>Красивая дорога</h3>
+          <p>
+            &mdash;&nbsp;№4&nbsp;&mdash;
+            Ехать в Седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </div>
+        <div class="fifth-special">
+          <h3>Мало туристов</h3>
+          <p>
+            &mdash;&nbsp;№5&nbsp;&mdash;
+            Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там
+          </p>
+        </div>
+      </section>
       <section class="findhotel">
         <div class="findhotel-intro">
-          <h2>Заинтересовались?</h2>
+          <h3>Заинтересовались?</h3>
           <p>
             Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         </div>
+        <h3>
+          <a href="#">Поиск гостиницы в Седоне</a>
+        </h3>
         <form class="findhotel-form" action="index.html" method="get">
-          <h3>Поиск гостиницы в Седоне</h3>
           <div class="findhotel-option">
             <label for="arrival-date">Дата заезда:</label>
             <input type="date" name="arrival-date" value="2017-04-27" id="arrival-date">
@@ -129,7 +126,7 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <section class="footer-hashtag">
           <b>#visitsedona</b>
         </section>
