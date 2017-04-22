@@ -1,0 +1,57 @@
+body {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "PT Sans";
+  color: #333333;
+  background-color: rgba(129, 179, 210, 0.75);
+}
+
+.about-intro h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.features-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.features.features-gray h3 {
+  color: #000000;
+}
+
+.features.features-blue h3 {
+  color: #ffffff;
+}
+
+.findhotel h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.findhotel-intro h3 {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-sorted-item h1, .hotel-sorted-header h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-sorted-header h4 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
