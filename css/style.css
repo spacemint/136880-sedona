@@ -20,11 +20,10 @@ body {
   font-weight: 700;
 }
 
-.features.features-gray h3 {
+.features-gray h3 {
   color: #000000;
 }
-
-.features.features-blue h3 {
+.features-blue h3 {
   color: #ffffff;
 }
 
