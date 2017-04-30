@@ -148,7 +148,7 @@ body {
 .findhotel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
 }
@@ -156,13 +156,16 @@ body {
 .findhotel-intro {
  text-align: center;
  text-transform: uppercase;
- padding: 60px 0 50px;
+ padding: 40px 0 43px;
 }
 
 .findhotel-header {
   width: 568px;
   background-color: #766357;
   text-align: center;
+  padding: 15px 0 11px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .findhotel a {
@@ -183,20 +186,58 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  padding: 20px;
+  margin: 0;
 }
 
 .findhotel-intro p {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
-  padding: 0;
+  padding: 5px;
   margin: 0;
 }
 
 .findhotel-form {
   width: 568px;
   padding: 55px;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(100, 0, 255, 0.5);
+  box-sizing: border-box;
+}
+
+.main-footer {
+  background-color: rgba(0, 100, 255, 0.5);
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 70px;
+  box-sizing: border-box;
+}
+
+.footer-hashtag {
+  width: 240px;
+  padding-left: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: rgba(255, 0, 100, 0.5);
+  box-sizing: border-box;
+}
+
+.footer-social {
+  width: 400px;
+  text-align: center;
+  background-color: rgba(100, 255, 100, 0.5);
+  box-sizing: border-box;
+}
+
+.footer-copyright {
+  width: 240px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  background-color: rgba(0, 100, 100, 0.5);
   box-sizing: border-box;
 }
 
@@ -205,11 +246,69 @@ body {
   background-image: url(../img/blurred-mountains.jpg);
   background-repeat: repeat-y;
   background-position: center top;
+  box-sizing: border-box;
+  width: 1200px;
   padding: 30px 70px;
 }
 
 .hotel-sort-form {
+  box-sizing: border-box;
+  width: 1060px;
   display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hotel-sort-infrastructure legend,
+.hotel-sort-type legend,
+.hotel-sort-cost label
+ {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hotel-sort-infrastructure {
+  width: 240px;
+  border: none;
+}
+
+.hotel-sort-type {
+  width: 290px;
+  border: none;
+}
+
+.hotel-sort-cost {
+  width: 330px;
+  border: none;
+  margin-left: auto;
+  text-align: center;
+}
+
+.hotel-sorted-header {
+  padding: 30px 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hotel-sorted-header h3 {
+  width: 163px;
+}
+
+
+.hotel-sorted-sortbyrole {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-sorted-sortbyrole li {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .hotel-sorted-item h1, .hotel-sorted-header h3 {
@@ -217,6 +316,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .hotel-sorted-header h4 {
@@ -224,10 +324,6 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
-}
-
-.main-footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 36px 0;
+  text-transform: uppercase;
+  width: 116px;
 }
