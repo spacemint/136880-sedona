@@ -132,10 +132,6 @@ body {
   margin: 0;
 }
 
-.findhotel {
-  box-sizing: border-box;
-}
-
 .features-item p{
   font-size: 14px;
   line-height: 21px;
@@ -145,40 +141,10 @@ body {
   color: #000000;
 }
 
-.findhotel {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  box-sizing: border-box;
-}
-
 .findhotel-intro {
- text-align: center;
- text-transform: uppercase;
- padding: 40px 0 43px;
-}
-
-.findhotel-header {
-  width: 568px;
-  background-color: #766357;
   text-align: center;
-  padding: 15px 0 11px;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.findhotel a {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  background-color: #766357;
-  padding: 0;
-  margin: 0;
+  padding: 40px 0 43px;
 }
 
 .findhotel-intro h3 {
@@ -198,11 +164,39 @@ body {
   margin: 0;
 }
 
+.findhotel-header {
+  width: 568px;
+  background-color: #766357;
+  text-align: center;
+  padding: 30px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.findhotel-header a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.findhotel {
+  position: relative;
+}
+
 .findhotel-form {
+  position: absolute;
+  left: 50%;
+  margin-left: -284px;
   width: 568px;
   padding: 55px;
-  background-color: rgba(100, 0, 255, 0.5);
   box-sizing: border-box;
+  background-color: rgba(100, 0, 255, 0.5);
 }
 
 .main-footer {
@@ -294,10 +288,27 @@ body {
   align-items: center;
 }
 
+.hotel-sorted-item h1,
+.hotel-sorted-header h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
 .hotel-sorted-header h3 {
   width: 163px;
 }
 
+.hotel-sorted-header h4 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  width: 116px;
+}
 
 .hotel-sorted-sortbyrole {
   display: flex;
@@ -309,21 +320,4 @@ body {
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.hotel-sorted-item h1, .hotel-sorted-header h3 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.hotel-sorted-header h4 {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-  width: 116px;
 }
