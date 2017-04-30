@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Отели</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -31,7 +32,7 @@
     </header>
     <main class="container">
       <section class="hotel-sort">
-        <form class="hotel-sort-form" action="hotel.html" method="get">
+        <form class="hotel-sort-form" action="#" method="get">
           <fieldset class="hotel-sort-infrastructure">
             <legend>Инфраструктура:</legend>
             <div class="hotel-sort-option">
@@ -69,8 +70,8 @@
               <span class="range-max">До 3000</span>
             </div>
             <input type="range" min=0 max=3000 step=500 value=2500 id="hotel-sort-range">
+            <button type="submit" class="btn">Показать</button>
           </fieldset>
-          <button type="submit" class="btn">Показать</button>
         </form>
       </section>
       <section class="hotel-sorted">
