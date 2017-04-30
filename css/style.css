@@ -1,10 +1,87 @@
 body {
+  background-color: #f2f2f2;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   font-family: "PT Sans";
   color: #333333;
+}
+
+html,
+body {
+  min-width: 1200px;
+  padding: 0;
+  margin: 0;
   background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.main-header {
+  position: relative;
+  width: 1200px;
+  padding: 0;
+}
+
+.main-logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.main-nav ul {
+  display: flex;
+  padding: 0 55px;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.main-nav li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+.main-nav li:nth-child(2) {
+  margin-right: 240px;
+}
+
+.main-nav li:nth-child(3) {
+  margin-right: 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "PT Sans";
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.intro-img {
+  width: 1200px;
+  height: 433px;
+  background-colo: #4a789f;
+  background-image: url("../img/intro-shape.png"), url("../img/intro-mountains.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, left -55px;
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-intro {
+  padding: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .about-intro h2 {
@@ -12,26 +89,93 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  margin: 10px 0 28px;
+}
+
+.about-intro p {
+    margin: 0;
+}
+
+.features {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features-blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.features-gray {
+  background-color: #eeeeee;
+}
+
+.features-item {
+  width: 400px;
+  padding: 55px;
+}
+
+.features-blue .features-img {
+  width: 800px;
+  height: 256px;
 }
 
 .features-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.findhotel {
+  box-sizing: border-box;
+}
+
+.features-item p{
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .features-gray h3 {
   color: #000000;
 }
-.features-blue h3 {
-  color: #ffffff;
+
+.findhotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.findhotel h3 {
+.findhotel-intro {
+ text-align: center;
+ text-transform: uppercase;
+ padding: 60px 0 50px;
+}
+
+.findhotel-header {
+  width: 568px;
+  background-color: #766357;
+  text-align: center;
+}
+
+.findhotel a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #766357;
+  padding: 0;
+  margin: 0;
 }
 
 .findhotel-intro h3 {
@@ -39,6 +183,33 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
+
+.findhotel-intro p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+
+.findhotel-form {
+  width: 568px;
+  padding: 55px;
+  background-color: rgba(255, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.hotel-sort {
+  background-color: #81b3d2;
+  background-image: url(../img/blurred-mountains.jpg);
+  background-repeat: repeat-y;
+  background-position: center top;
+  padding: 30px 70px;
+}
+
+.hotel-sort-form {
+  display: flex;
 }
 
 .hotel-sorted-item h1, .hotel-sorted-header h3 {
@@ -53,4 +224,10 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 36px 0;
 }
