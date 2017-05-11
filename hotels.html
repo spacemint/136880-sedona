@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Отели</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -64,12 +65,21 @@
             </div>
           </fieldset>
           <fieldset class="hotel-sort-cost">
-            <label for="hotel-sort-range">Стоимость в сутки (Р):</label>
-            <div class="range-min-max">
-              <span class="range-min">От 0</span>
-              <span class="range-max">До 3000</span>
+            <label for="cost-title">Стоимость в сутки (Р):</label>
+            <div class="price-controls">
+              <label class="min-price">От <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">До <input type="text" name="max-price" value="3000"></label>
             </div>
-            <input type="range" min=0 max=3000 step=500 value=2500 id="hotel-sort-range">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar">
+                </div>
+              </div>
+              <div class="range-toggle range-toggle-min">
+              </div>
+              <div class="range-toggle range-toggle-max">
+              </div>
+            </div>
             <button type="submit" class="btn">Показать</button>
           </fieldset>
         </form>
@@ -104,6 +114,12 @@
             </div>
           </div>
           <div class="hotel-sorted-rate">
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <span>Рейтинг: 8,5</span>
           </div>
         </article>
@@ -125,6 +141,11 @@
             </div>
           </div>
           <div class="hotel-sorted-rate">
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <span>Рейтинг: 8,9</span>
           </div>
         </article>
@@ -146,6 +167,10 @@
             </div>
           </div>
           <div class="hotel-sorted-rate">
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <span>Рейтинг: 9,2</span>
           </div>
         </article>
