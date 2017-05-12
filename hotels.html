@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Отели</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header container">
       <div class="main-logo">
-        <a href="#">
+        <a href="index.html">
           <img src="img/logo-city-of-sedona.png" width="138" height="70" alt="Логотип города Седона">
         </a>
       </div>
@@ -25,7 +26,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a class="active-page" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -35,41 +36,38 @@
         <form class="hotel-sort-form" action="#" method="get">
           <fieldset class="hotel-sort-infrastructure">
             <legend>Инфраструктура:</legend>
-            <div class="hotel-sort-option">
-              <input type="checkbox" name="infrastructure" value="pool" id="hotel-sort-pool" checked>
-              <label for="hotel-sort-pool">Бассейн</label>
-            </div>
-            <div class="hotel-sort-option">
-              <input type="checkbox" name="infrastructure" value="parking" id="hotel-sort-parking">
-              <label for="hotel-sort-parking">Парковка</label>
-            </div>
-            <div class="hotel-sort-option">
-              <input type="checkbox" name="infrastructure" value="wifi" id="hotel-sort-wifi">
-              <label for="hotel-sort-wifi">Wi-Fi</label>
-            </div>
+            <input type="checkbox" name="infrastructure" value="pool" id="hotel-sort-pool" checked>
+            <label for="hotel-sort-pool">Бассейн</label>
+            <input type="checkbox" name="infrastructure" value="parking" id="hotel-sort-parking">
+            <label for="hotel-sort-parking">Парковка</label>
+            <input type="checkbox" name="infrastructure" value="wifi" id="hotel-sort-wifi">
+            <label for="hotel-sort-wifi">Wi-Fi</label>
           </fieldset>
           <fieldset class="hotel-sort-type">
             <legend>Тип жилья:</legend>
-            <div class="hotel-sort-option">
-              <input type="checkbox" name="type" value="hotel" id="hotel-sort-hotel" checked>
-              <label for="hotel-sort-hotel">Гостиница</label>
-            </div>
-            <div class="hotel-sort-option">
-              <input type="checkbox" name="type" value="motel" id="hotel-sort-motel" checked>
-              <label for="hotel-sort-motel">Мотель</label>
-            </div>
-            <div class="hotel-sort-option">
-              <input type="checkbox" name="type" value="apartments" id="hotel-sort-apartments" checked>
-              <label for="hotel-sort-apartments">Апартаменты</label>
-            </div>
+            <input type="checkbox" name="type" value="hotel" id="hotel-sort-hotel" checked>
+            <label for="hotel-sort-hotel">Гостиница</label>
+            <input type="checkbox" name="type" value="motel" id="hotel-sort-motel" checked>
+            <label for="hotel-sort-motel">Мотель</label>
+            <input type="checkbox" name="type" value="apartments" id="hotel-sort-apartments" checked>
+            <label for="hotel-sort-apartments">Апартаменты</label>
           </fieldset>
           <fieldset class="hotel-sort-cost">
-            <label for="hotel-sort-range">Стоимость в сутки (Р):</label>
-            <div class="range-min-max">
-              <span class="range-min">От 0</span>
-              <span class="range-max">До 3000</span>
+            <label for="cost-title">Стоимость в сутки (Р):</label>
+            <div class="price-controls">
+              <label class="min-price">От <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">До <input type="text" name="max-price" value="3000"></label>
             </div>
-            <input type="range" min=0 max=3000 step=500 value=2500 id="hotel-sort-range">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar">
+                </div>
+              </div>
+              <div class="range-toggle range-toggle-min">
+              </div>
+              <div class="range-toggle range-toggle-max">
+              </div>
+            </div>
             <button type="submit" class="btn">Показать</button>
           </fieldset>
         </form>
@@ -79,10 +77,12 @@
           <h3>Найдено: 3</h3>
           <h4>Сортировка:</h4>
           <ul class="hotel-sorted-sortbyrole">
-            <li><a href="#">По цене:</a></li>
-            <li><a href="#">По типу:</a></li>
-            <li><a href="#">По рейтингу:</a></li>
+            <li><a class="active-role" href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
+          <div class="btn ascending-arrow"></div>
+          <div class="btn descending-arrow active-arrow"></div>
         </header>
         <article class="hotel-sorted-item hotel-sorted-item-amara">
           <div class="hotel-sorted-img">
@@ -102,6 +102,12 @@
             </div>
           </div>
           <div class="hotel-sorted-rate">
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <span>Рейтинг: 8,5</span>
           </div>
         </article>
@@ -123,6 +129,11 @@
             </div>
           </div>
           <div class="hotel-sorted-rate">
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <span>Рейтинг: 8,9</span>
           </div>
         </article>
@@ -144,6 +155,10 @@
             </div>
           </div>
           <div class="hotel-sorted-rate">
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <span>Рейтинг: 9,2</span>
           </div>
         </article>
@@ -154,13 +169,13 @@
           <b>#visitsedona</b>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-yt" href="#">Youtube</a>
+          <a class="social-btn social-btn-tw" href=""></a>
+          <a class="social-btn social-btn-fb" href=""></a>
+          <a class="social-btn social-btn-yt" href=""></a>
         </section>
         <section class="footer-copyright">
-          <a class="btn" href="https://htmlacademy.ru">
-            <span>Website by:</span>
+          <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span>Website by</span>
           </a>
         </section>
     </footer>
