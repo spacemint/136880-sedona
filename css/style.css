@@ -149,10 +149,12 @@ body {
 }
 
 .features-item h3 {
+  width: 150px;
+  text-align: center;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
 }
 
 .features-item p{
