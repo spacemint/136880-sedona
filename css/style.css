@@ -145,13 +145,13 @@ body {
 .features-item {
   width: 400px;
   padding: 45px;
+  text-align: center;
 }
 
 .features-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  padding: 0 80px;
   margin: 0 0 20px;
 }
 
